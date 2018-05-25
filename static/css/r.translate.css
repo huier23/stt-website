@@ -1,0 +1,48 @@
+body {
+	background-color:#2897ff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #ffffff;
+	margin: 0.5cm;
+}
+
+/* .center {
+	text-align: center
+} */
+
+div#mybutton button{
+	background-color:#2897ff;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	border: 0;
+}
+
+div#mybutton img{
+    width: auto;  
+    height: auto;  
+    max-width: 50%;  
+    max-height: 50%; 
+}
+
+div#stt_display{
+	color:#104272; 
+}
+
+div#text_display{
+	background-color:#177edf; 
+}
+
+div#log{
+	color: #104272;
+}
+p#info{
+	color: #104272;
+}
+
+div #action1 {
+    background-color: #ffffffbb;
+    color: #2897ff;
+    padding: 12px;
+    text-align:center; 
+    
+}

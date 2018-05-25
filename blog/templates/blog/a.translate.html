@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+
+    <head>
+        <title>Audio to Text</title>
+        
+        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/canves.css' %}">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div id="content">
+            <div>
+                <h1>Audio to Text</h1>
+            </div>
+            <div>
+                <p>Please upload the audio you want to translate to text.</p>
+                <font color="#ffea28">Notice: only accept (.wav) file formate.</font>
+                <form action="/a.translate" method="post" enctype="multipart/form-data" >
+                    {% csrf_token %}
+                    {{ form }}
+                    <input id="send" type="submit" value="send" style="-webkit-border-radius: 9; -moz-border-radius: 9; border-radius: 9px; color: #ffffff; background: #54aafc;  border:none; padding: 5px 10px 5px 10px; text-decoration: none; margin: 10px 0px 10px 0px"/>
+                </form>
+
+            </div>
+            <div>
+                <p>Translating Result:</p>
+                <p>{{ sttResult }}</p>
+            </div>
+        </div>
+        <div id="footer">
+                <div id="action1"><a href="/">Back to Speech Service</a></div>
+        </div>
+    </body>
+</html>

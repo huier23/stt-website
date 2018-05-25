@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Real Time Speech to Text</title>
+        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/r.translate.css' %}">
+    </head>
+    <body style="height: 100%;">
+        <div id="content" style="position:relative; width:100%; min-height:100%; padding-bottom: 100px; box-sizing: border-box;">
+            <h1 class="center" id="headline">Real Time Speech to Text</h1>
+            <div>
+                <p id="info">Click mic to start speaking.</p>
+                <div id="log"></div>
+                <div id="mybutton"><button type="button" onclick="startButton()" id="rec_button"/>
+                    <img id="rec_img" src="{% static 'image/end.gif' %}"/>
+                </buton></div>
+                <p>You Speak:</p>
+                <div id="stt_display"></div>
+                <p>History</p>
+                <div id="text_display"></div>
+            </div>
+        </div>
+        <div id="footer" style="width: 100%; height:100px; position:absolute; bottom:0px; left:0px;">
+                <div id="action1" style="background-color: #ffffffbb; color: #2897ff; padding: 12px; text-align:center; "><a href="/">Back to Speech Service</a></div>
+        </div>
+    </body>
+    <script src="{% static 'js/r.translate.js' %}"></script>
+</html>
+
+
+    

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Audio to Text</title>
+        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/a.translate.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1>Audio to Text</h1>
+        </div>
+       
+        <div>
+            <p>Speech to Text Result</p>
+            <p>{{ sttResult }}</p>
+            <button href="/a.translate">Back to Audio to Text</button>
+        </div>
+        
+        
+
+    </body>
+</html>
