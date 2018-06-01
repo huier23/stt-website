@@ -18,7 +18,6 @@
             </div>
             <div>
                 <p>Please upload the audio you want to translate to text.</p>
-                <font color="#ffea28">Notice: only accept (.wav) file formate.</font>
                 <form action="/a.translate" method="post" enctype="multipart/form-data" >
                     {% csrf_token %}
                     {{ form }}
