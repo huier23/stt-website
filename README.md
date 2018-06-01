@@ -4,4 +4,10 @@ The websit for Fubon group which enable user upload the audio file and display w
 
 Also, user can use real time speech to text service. 
 
-Just for fun.
+--
+
+brew install ffmpeg
+
+pip3 install -r requirements.txt
+
+python3 manage.py runserver
