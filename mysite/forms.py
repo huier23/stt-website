@@ -15,7 +15,6 @@ class stt:
             )
         ff.run()
 
-
         input_file = 'output.wav'
 
         r = speech_recognition.Recognizer()
